@@ -1,19 +1,23 @@
 const chatIcon = document.querySelector('#chat-icon');
 const chatbotIframe = document.querySelector('#chatbot-iframe');
 
-function reportWindowSize() {
+function windowResize() {
     console.log(chatbotIframe);
     console.log(window.innerWidth);
     chatbotIframe.style.width = `${window.innerWidth}px`;
-//   widthOutput.textContent = window.innerWidth;
 }
 
-window.onresize = reportWindowSize;
+window.onresize = windowResize;
 
 chatIcon.addEventListener('click', function(e) {
     chatIcon.style.opacity = 0;
     chatbotIframe.classList.add('fadeup');
-    chatbotIframe.style.height = `515px`;
+    if (window.innerWidth <= 500) {
+        chatbotIframe.style.height = `629px`;
+    } else {
+        chatbotIframe.style.height = `515px`;
+    }
+    
     const chatbotHeader = chatbotIframe.contentWindow.document.querySelector('#chatbot-header');
     const chatbotHeaderInner = chatbotIframe.contentWindow.document.querySelector('#chatbot-header-inner');
     const chatbotBody = chatbotIframe.contentWindow.document.querySelector('#chatbot-body');
