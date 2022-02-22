@@ -1,6 +1,7 @@
-const chatIcon = document.querySelector('.chat-icon');
+const chatIcon = document.querySelector('#chat-icon');
 const chatbotIframe = document.querySelector('#chatbot-iframe');
 const main = document.querySelector('#main');
+console.log(chatIcon);
 
 chatIcon.addEventListener('click', function(e) {
     chatIcon.style.opacity = 0;

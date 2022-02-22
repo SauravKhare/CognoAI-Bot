@@ -96,20 +96,21 @@ select {
 }
 
 .chatbot-iframe {
-    width: 416px;
+    // width: 416px;
+    width: 66vh;
     height: 0px;
     // height: 629px;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    // top: 0;
     background: #ffffff;
     border-radius: 18px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
-    // display: none;
 }
 
 .chatbot-container {
-    position: relative;
+    max-height: 629px;
 }
 
 .chatbot-header {

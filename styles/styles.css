@@ -99,7 +99,7 @@ select {
 }
 
 .chatbot-iframe {
-  width: 416px;
+  width: 66vh;
   height: 0px;
   position: absolute;
   bottom: 1rem;
@@ -111,7 +111,7 @@ select {
 }
 
 .chatbot-container {
-  position: relative;
+  max-height: 629px;
 }
 
 .chatbot-header {
