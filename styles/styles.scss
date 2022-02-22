@@ -323,10 +323,9 @@ select {
         width: 416px;
         // width: 95vw;
         height: 0px;
-        position: relative;
-        bottom: 1rem;
-        right: 1rem;
-        left: 0rem;
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
         // top: 0;
         background: #ffffff;
         border-radius: 18px;

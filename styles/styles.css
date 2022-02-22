@@ -374,10 +374,9 @@ select {
   .chatbot-iframe {
     width: 416px;
     height: 0px;
-    position: relative;
-    bottom: 1rem;
-    right: 1rem;
-    left: 0rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
     background: #ffffff;
     border-radius: 18px;
     -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
