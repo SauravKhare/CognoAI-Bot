@@ -9,7 +9,7 @@ function windowResize() {
 
 window.onresize = windowResize;
 
-chatIcon.addEventListener('click', function(e) {
+function animateAll(e) {
     chatIcon.style.opacity = 0;
     chatbotIframe.classList.add('fadeup');
     if (window.innerWidth <= 500) {
@@ -53,4 +53,6 @@ chatIcon.addEventListener('click', function(e) {
     setTimeout(() => {
         chatbotMainQuestion.style.opacity = 1;
     }, 9000);
-});
+}
+
+chatIcon.addEventListener('click', animateAll);
