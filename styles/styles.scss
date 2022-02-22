@@ -1,0 +1,281 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: block;
+    z-index: 123456789;
+}
+
+.chat-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.chat-icon svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.chat-icon svg:hover path {
+    fill: #FF5C00;
+}
+
+.chatbot-iframe {
+    width: 416px;
+    height: 0px;
+    // height: 629px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+    // display: none;
+}
+
+.chatbot-container {
+    position: relative;
+}
+
+.chatbot-header {
+    position: relative;
+    width: 416px;
+    height: 278px;
+    left: 0px;
+    background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+    padding: 0rem 0.8125rem 0rem 0.8125rem;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.chatbot-body {
+    position: relative;
+    background: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    color: #000;
+    margin: 0.8125rem;
+    height: 400px;
+    width: 390px;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    top: -75px;
+    padding: 0 25px 0 25px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+.chatbot-header-inner {
+    padding: 1.25rem 3.5rem 1.25rem 3.5rem;
+}
+
+
+.chatbot-header_title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.875rem;
+    line-height: 2.441rem;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.chabot-header_subline {
+    font-size: 1.375rem;
+    line-height: 1.79rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.chatbot-header_hello_wave svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.chatbot-header_subtext {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+    font-weight: 500;
+    margin-bottom: 49px;
+}
+
+.chatbot-bot {
+    position: relative;
+    top: -3.2rem;
+}
+
+.chatbot-body_faq-line {
+    margin-top: -3.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.chatbot-body_faq-line p {
+    font-size: 0.875rem;
+    line-height: 1.139rem;
+    font-weight: 700;
+}
+
+.chatbot-body_faq-line svg {
+    margin-left: 7px;
+    padding-top: 6px;
+}
+
+.chatbot-body_questions {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 11px;
+}
+
+.chatbot-question {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 1.313rem;
+    height: 50px;
+    border: 1px solid #E1E1E1;
+    border-radius: 8px;
+    padding: 15px 5px 15px 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+
+.chatbot-question span {
+    margin-top: 5px;
+}
+
+.chatbot-question a {
+   color: #2D2D2D;
+   text-decoration: none;
+}
+
+.chatbot-question svg {
+    margin-right: 7px;
+}
+
+.chatbot-main-question {
+    width: 268px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 29px;
+    margin-inline: auto;
+}
+
+.chatbot-main-question a {
+    color: #2D2D2D;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.139rem;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+@keyframes slideup {
+    from {
+      height: 0px;
+    }
+  
+    to {
+     height: 629px;
+    }
+}
+
+@keyframes slidedown {
+    from {
+      height: 629px;
+    }
+  
+    to {
+     height: 0px;
+    }
+}
+
+.fadeup {
+    animation: slideup 0.8s ease-in;
+}
+
+.fadeout {
+    animation: slidedown 0.8s ease-out;
+}
