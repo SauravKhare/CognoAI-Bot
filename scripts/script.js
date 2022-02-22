@@ -1,14 +1,13 @@
 const chatIcon = document.querySelector('#chat-icon');
 const chatbotIframe = document.querySelector('#chatbot-iframe');
 
+// Function to resize iframe on window resize and mobile screens.
 function windowResize() {
-    console.log(chatbotIframe);
-    console.log(window.innerWidth);
     chatbotIframe.style.width = `${window.innerWidth}px`;
 }
-
 window.onresize = windowResize;
 
+// Function to animate iframe and it's components.
 function animateAll(e) {
     chatIcon.style.opacity = 0;
     chatbotIframe.classList.add('fadeup');

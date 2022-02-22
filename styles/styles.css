@@ -100,7 +100,7 @@ select {
 
 .chatbot-iframe {
   width: 416px;
-  max-width: 431px;
+  max-width: 416px;
   height: 0px;
   position: absolute;
   bottom: 1rem;
