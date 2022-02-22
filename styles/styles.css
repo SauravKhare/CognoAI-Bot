@@ -124,8 +124,8 @@ select {
   color: #ffffff;
   font-family: 'DM Sans', sans-serif;
   opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
 }
 
 .chatbot-body {
@@ -142,10 +142,17 @@ select {
   padding: 0 25px 0 25px;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
 }
 
 .chatbot-header-inner {
   padding: 1.25rem 3.5rem 1.25rem 3.5rem;
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
 }
 
 .chatbot-header_title {
@@ -177,13 +184,25 @@ select {
   margin-bottom: 49px;
 }
 
+.chatbot-bot2 {
+  position: relative;
+  top: -2.3rem;
+  left: -1.9rem;
+  -webkit-transition: 0.4 ease-out;
+  transition: 0.4 ease-out;
+  z-index: 999999;
+}
+
 .chatbot-bot {
   position: relative;
   top: -3.2rem;
+  opacity: 0;
+  -webkit-transition: 0.5 ease-in;
+  transition: 0.5 ease-in;
 }
 
 .chatbot-body_faq-line {
-  margin-top: -3.8rem;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,6 +232,30 @@ select {
           flex-direction: column;
   gap: 9px;
   margin-top: 11px;
+}
+
+#chatbot-question1 {
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
+}
+
+#chatbot-question2 {
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
+}
+
+#chatbot-question3 {
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
+}
+
+#chatbot-question4 {
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
 }
 
 .chatbot-question {
@@ -266,6 +309,9 @@ select {
           justify-content: center;
   margin-top: 29px;
   margin-inline: auto;
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
 }
 
 .chatbot-main-question a {
@@ -314,12 +360,12 @@ select {
 }
 
 .fadeup {
-  -webkit-animation: slideup 0.8s ease-in;
-          animation: slideup 0.8s ease-in;
+  -webkit-animation: slideup 0.5s ease-in;
+          animation: slideup 0.5s ease-in;
 }
 
 .fadeout {
-  -webkit-animation: slidedown 0.8s ease-out;
-          animation: slidedown 0.8s ease-out;
+  -webkit-animation: slidedown 1s ease-out;
+          animation: slidedown 1s ease-out;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,17 +1,44 @@
 const chatIcon = document.querySelector('.chat-icon');
 const chatbotIframe = document.querySelector('#chatbot-iframe');
 const main = document.querySelector('#main');
-const chatbotHeader = document.querySelector('.chatbot-header');
-
-
 
 chatIcon.addEventListener('click', function(e) {
-    console.log('Clicked');
+    chatIcon.style.opacity = 0;
     chatbotIframe.classList.add('fadeup');
     chatbotIframe.style.height = `629px`;
-    console.log(chatbotIframe.style.height)
-    if (chatbotIframe.style.height >= '629') {
-        const chatbotHeader = document.querySelector('.chatbot-header');
-        console.log(chatbotHeader)
-    }
+    const chatbotHeader = chatbotIframe.contentWindow.document.querySelector('#chatbot-header');
+    const chatbotHeaderInner = chatbotIframe.contentWindow.document.querySelector('#chatbot-header-inner');
+    const chatbotBody = chatbotIframe.contentWindow.document.querySelector('#chatbot-body');
+    const chatbot2 = chatbotIframe.contentWindow.document.querySelector('#chatbot-bot2');
+    const chatbotQuestion1 = chatbotIframe.contentWindow.document.querySelector('#chatbot-question1');
+    const chatbotQuestion2 = chatbotIframe.contentWindow.document.querySelector('#chatbot-question2');
+    const chatbotQuestion3 = chatbotIframe.contentWindow.document.querySelector('#chatbot-question3');
+    const chatbotQuestion4 = chatbotIframe.contentWindow.document.querySelector('#chatbot-question4');
+    const chatbotMainQuestion = chatbotIframe.contentWindow.document.querySelector('#chatbot-main-question');
+    
+    setTimeout(() => {
+        chatbotHeader.style.opacity = 1;
+    }, 1000);
+    setTimeout(() => {
+        chatbotHeaderInner.style.opacity = 1;
+    }, 2500);
+    setTimeout(() => {
+        chatbot2.style.opacity = 1;
+        chatbotBody.style.opacity = 1;
+    }, 3500);
+    setTimeout(() => {
+        chatbotQuestion1.style.opacity = 1;
+    }, 4500);
+    setTimeout(() => {
+        chatbotQuestion2.style.opacity = 1;
+    }, 5500);
+    setTimeout(() => {
+        chatbotQuestion3.style.opacity = 1;
+    }, 6500);
+    setTimeout(() => {
+        chatbotQuestion4.style.opacity = 1;
+    }, 7700);
+    setTimeout(() => {
+        chatbotMainQuestion.style.opacity = 1;
+    }, 9000);
 });
