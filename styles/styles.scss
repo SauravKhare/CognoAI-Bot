@@ -96,8 +96,8 @@ select {
 }
 
 .chatbot-iframe {
-    // width: 416px;
-    width: 66vh;
+    width: 431px;
+    max-width: 431px;
     height: 0px;
     // height: 629px;
     position: absolute;
@@ -316,4 +316,20 @@ select {
 
 .fadeout {
     animation: slidedown 1s ease-out;
+}
+
+@media all and (max-width: 500px) {
+    .chatbot-iframe {
+        width: 416px;
+        // width: 95vw;
+        height: 0px;
+        position: relative;
+        bottom: 1rem;
+        right: 1rem;
+        left: 0rem;
+        // top: 0;
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+    }
 }
